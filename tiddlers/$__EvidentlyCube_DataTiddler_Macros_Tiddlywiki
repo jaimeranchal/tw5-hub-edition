@@ -1,0 +1,28 @@
+copy-to-clipboard: <<copy-to-clipboard "Mary had a little lamb">>
+colour: <<colour name:"page-background">>
+
+list-links: <<list-links filter:"" type:"ol" subtype:"li" class:"" emptyMessage:"">>
+
+list-links-draggable: <<list-links-draggable tiddler:"">>
+list-tagged-draggable: <<list-tagged-draggable tag:"Features">>
+
+now: <<now format:"YYYY-0MM-0DD 0hh:0mm">>
+
+tab: <<tabs tabList:"[tag[sampletab]]" default:"SampleTabTwo" state:"$:/state/tab2" class:"tc-vertical" template:"" buttonTemplate:"" retain:"" actions:"" explicitState:"">>
+
+tag: <<tag tag:"">>
+tag-picker: <<tag-picker actions:"" tagField:"">>
+tag-pill: <<tag-pill tag:"" element-tag:"" element-attributes:"" actions:"">>
+
+timeline: <<timeline limit:"" format:"" subfilter:"" dateField:"">>
+tree: <<tree prefix:"$:/" separator:"/">>
+
+toc: <div class="tc-table-of-contents"><<toc tag:"" sort:"sort[title]" selectedTiddler:"" unselectedText:"" missingText:"" template:"">></div>
+toc-expandable: <div class="tc-table-of-contents"><<toc-expandable tag:"" sort:"sort[title]" selectedTiddler:"" unselectedText:"" missingText:"" template:"">></div>
+toc-selective-expandable: <div class="tc-table-of-contents"><<toc-selective-expandable tag:"" sort:"sort[title]" selectedTiddler:"" unselectedText:"" missingText:"" template:"">></div>
+toc-tabbed-internal-nav:  <<toc-tabbed-internal-nav  tag:"" sort:"sort[title]" selectedTiddler:"" unselectedText:"" missingText:"" template:"">>
+toc-tabbed-external-nav:  <<toc-tabbed-external-nav  tag:"" sort:"sort[title]" selectedTiddler:"" unselectedText:"" missingText:"" template:"">>
+
+
+unusedtitle: <<unusedtitle baseName:"" separator:"" template:"">>
+version: <<version>>

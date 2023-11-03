@@ -1,0 +1,40 @@
+alert: <<alert type:"primary" src:"" width:"100%", class:"">>
+
+alert-leftbar: <<alert-leftbar typ:"primary" src:"" width:"100%", class:"">>
+
+
+badge: <<badge type:"primary" src:"">>
+
+badge-pill: <<badge-pill type:"primary" src:"">>
+status badge: <<dbadge subject status type>>
+
+card: <<card header:"" title:"" subtitle:"" text:"" footer:"" width:"" class:"">>
+
+
+details: <<details label:"" src:"" status:"" labelClass:"" srcClass:"">>
+
+hspace: <<hspace width:"25px">>
+vspace: <<vspace height:"25px">>
+multicol: <<multicol src:"" ncol:"" class:"">>
+
+highlight:        <<hl  src:"" color:"yellow">>
+highlight shadow: <<hls src:"" color:"green">>
+highlight pen:    <<hlp src:"" color:"#ffff0050">>
+
+image-basic:    <<image-basic img width:"" align:"" caption:"" tooltip:"" alt:"">>
+image-card :    <<image-card img width:"30%" align:"left" title:"" text:"" footer:"" alt:"image alternative text", pos:"top">>
+image=pretty:   <<image-pretty img:"" width:"" align:"" caption:"" tooltip:"" alt:"">>
+image-polaroid: <<image-polaroid img:"" width:"" align:"" caption:"" tooltip:"" alt:"">>
+image-overlay : <<image-overlay  img width:"30%" align:"left" caption:"" title:"" text:""  fadeIn:"bottom">>
+image-slidein:  <<image-slidein  img width:"30%" align:"left" caption:"" tooltip:"" slidein:"left">>
+
+list-search: <<list-search filter:"" search:"" template:"" class:"" placeholder:"", stateTiddler:"">>
+
+
+
+slider: <<details label:"" src:"" status:"" labelClass:"" srcClass:"">>
+
+
+table-dynamic: <<table-dynamic filter:"" fields:"" indexes:"" caption:"" sortOp:"sort" class:"" footerRows:"0" stateTiddler:"" editButton:"yes" pagination:"no" emptyMessage:"filter input is empty">>
+
+table-csv: <<table-csv tidName:"" delimiter:"," sortType:"alphanumeric" format:"" caption:"" class:"" header:"yes" stateTiddler:"" id:"">>

@@ -1,0 +1,27 @@
+.cv-topbar-title,.tc-title, .tc-subtitle {
+  font-family: "Oswald";
+}
+h1,h2,h3,h4,h5 {
+  font-family: "Oswald";
+}
+/* not tc-tiddler-info */
+.tc-tiddler-body h1 {
+	font-size: 2rem;
+  text-align: center;
+	width: 100%;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #202020;
+}
+
+.tc-plugin-info h1 {
+	text-align: left;
+	padding-bottom: 0;
+	border: none;
+}
+
+/* Custom styles */
+.list-wrapper {
+  width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+}

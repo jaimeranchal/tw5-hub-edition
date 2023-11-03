@@ -1,0 +1,39 @@
+caption: 🎏 The Hub
+created: 20231103110238052
+modified: 20231103121436956
+tags: 
+title: Hub
+type: text/vnd.tiddlywiki
+
+This is the main entry point to your wiki. From here you //should// be able to:
+
+* View the ''main categories''
+* Do some ''basic actions'' (create new tids, check sth. etc)
+
+! 🎏 ToDo
+
+<div class="list-wrapper">
+<<checklist mode:sort>>
+</div>
+
+! 🧮 Tabs
+
+For each category defined you should see two tabs:
+
+<div class="list-wrapper">
+
+* a ''overview'' tab listing all tiddlers tagged with the corresponding category. Could be a table, a list, as you wish.
+* a ''create'' tab with a form to add new items.
+
+</div>
+
+! 🚧 Modding
+
+This template includes various plugins that can be further customised if needed. Most of them come from [[Mohammand|https://kookma.github.io/TW-Resources/]].
+
+<<tabs tabsList:"[tag[Modding]]" state:"$:/state/hub/modding">> 
+
+@@.todo
+[ ] Define ''view tabs'': a kind of overview of what's important to you.
+[ ] Define ''tiddler categories'' (fields and layout) in a `.json`.
+@@

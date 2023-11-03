@@ -1,0 +1,14 @@
+auto-trigger-textarea: 1
+caption: Tiddler with alias
+created: 20221127122132583
+display-filter: [<currentTiddler>]
+filter: [all[tiddlers]!is[system]!is[draft]search:title<query>]
+modified: 20231103120509519
+tags: $:/tags/EC/AutoComplete/Trigger exported
+template: [[$caret$|$option$]]
+title: $:/EvidentlyCube/Trigger/2
+trigger: ||
+type: text/vnd.tiddlywiki
+
+-> It triggers after typing `||` and simply lists all Tiddlers matching your query, without any additional filtering or changing how the results display.
+-> Unlike `[[` this actually uses the `$caret$` token purposefully.

@@ -1,0 +1,17 @@
+caption: Pikaday
+tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
+title: $:/plugins/kookma/pikaday/ui/ControlPanel/Settings
+type: text/vnd.tiddlywiki
+
+These settings let you customise the behaviour of Pikaday plugin.
+
+---
+
+;Show Pikaday setting in more sidebar
+:<$checkbox tiddler="$:/plugins/kookma/pikaday/ui/ControlPanel/Settings" tag="$:/tags/MoreSideBar"> Show setting in more sidebar</$checkbox>
+
+;Options
+:{{$:/plugins/kookma/pikaday/ui/config/Calendar}}
+: <label class="kk-pk-label">Date format</label><$edit-text tiddler="$:/language/projectify/DateFormat" tag=input default="" placeholder="date format e.g. DDth mmm" class="kk-pk-input"/>
+
+:<small>Hint: See [[DateFormat|https://tiddlywiki.com/#DateFormat]] for representation of dates.</small>

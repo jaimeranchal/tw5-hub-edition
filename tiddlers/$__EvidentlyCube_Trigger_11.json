@@ -1,0 +1,17 @@
+[
+    {
+        "created": "20221201170543299",
+        "text": "Category Tags",
+        "tags": "$:/tags/EC/AutoComplete/Trigger exported",
+        "modified": "20231103120509519",
+        "title": "$:/EvidentlyCube/Trigger/11",
+        "type": "text/vnd.tiddlywiki",
+        "trigger": "ctag:",
+        "filter": "[[$:/EvidentlyCube/DataTiddler/CategoryTags]indexes[]search:title<query>]\n",
+        "display-filter": "[<currentTiddler>]",
+        "template": "$option$",
+        "auto-trigger-input": "1",
+        "transform-filter": "[<currentTiddler>]",
+        "caption": "Category tags"
+    }
+]

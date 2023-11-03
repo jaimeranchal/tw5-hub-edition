@@ -1,0 +1,15 @@
+auto-trigger-textarea: 1
+caption: Core svg
+created: 20221201144700085
+display-filter: [<currentTiddler>removeprefix[$:/core/images/]]
+filter: [all[tiddlers+shadows]prefix[$:/core/images/]!is[draft]search:title<query>]
+modified: 20231103120509519
+tags: $:/tags/EC/AutoComplete/Trigger exported
+template: <<doc-svg "$option$" color:"red">>$caret$
+title: $:/EvidentlyCube/Trigger/10
+trigger: svg:
+type: text/vnd.tiddlywiki
+
+-> This trigger uses `svg:` to list all core svg images
+-> It then inserts the image using `doc-svg` from kookma Utility plugin like below
+`<<doc-svg tiddler:"" color:"">>`

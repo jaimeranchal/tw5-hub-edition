@@ -1,0 +1,14 @@
+auto-trigger-textarea: 1
+caption: Macro
+created: 20221201120239452
+display-filter: [<currentTiddler>]
+filter: [tag[$:/EvidentlyCube/Data/Macro]indexes[]search:title<query>]
+modified: 20231103120509520
+tags: $:/tags/EC/AutoComplete/Trigger exported
+template: $option$$caret$
+title: $:/EvidentlyCube/Trigger/9
+transform-filter: [tag[$:/EvidentlyCube/Data/Macro]getindex<currentTiddler>]
+trigger: <<
+type: text/vnd.tiddlywiki
+
+Macro autocomplete

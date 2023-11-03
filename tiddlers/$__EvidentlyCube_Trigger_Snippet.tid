@@ -1,0 +1,14 @@
+auto-trigger-textarea: 1
+caption: Insert snippet
+created: 20221129004454924
+display-filter: [<currentTiddler>get[caption]]
+filter: [all[tiddlers+shadows]tag[$:/tags/TextEditor/Snippet]!is[draft]search:title<query>]
+modified: 20231103120509520
+tags: $:/tags/EC/AutoComplete/Trigger exported
+template: $option$
+title: $:/EvidentlyCube/Trigger/Snippet
+transform-filter: [<currentTiddler>get[text]]
+trigger: __
+type: text/vnd.tiddlywiki
+
+List of all snippet

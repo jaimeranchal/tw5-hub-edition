@@ -1,0 +1,14 @@
+created: 20211222205945560
+creator: springerspandrel@gmail.com
+linkstyle-after: font-family: "PT Sans Narrow"; color:<<colour alert-border>> ;content: " to your wiki";
+linkstyle-before: font-family: "PT Sans Narrow"; color:<<colour alert-border>> ;content: "drag this: ";
+list-before: 
+modified: 20231103094837799
+modifier: springerspandrel@gmail.com
+notes: (prioritizes loading of google fonts)
+tags: $:/tags/RawMarkup
+title: $:/gf-preconnect
+type: text/vnd.tiddlywiki
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

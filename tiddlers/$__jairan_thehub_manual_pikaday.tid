@@ -1,0 +1,10 @@
+caption: Pikaday 📅
+created: 20231103120928726
+modified: 20231103122742969
+tags: Modding
+title: $:/jairan/thehub/manual/pikaday
+type: text/vnd.tiddlywiki
+
+!! Date picker
+
+By default, //Pikaday// is designed to change the `due` field of any tidder. To add it as part of the subtitle //and// let it change any custom field:

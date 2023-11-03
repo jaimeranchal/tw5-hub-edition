@@ -1,0 +1,10 @@
+caption: Kara 📋
+created: 20231103122518361
+modified: 20231103122843505
+tags: Modding
+title: $:/jairan/thehub/manual/kara
+type: text/vnd.tiddlywiki
+
+!! Checklists
+
+//Kara// adds a macro `<<checklist>>` to create a simple ''todo list'' anywhere in any tiddler.

@@ -1,0 +1,41 @@
+tags: $:/tags/Macro
+title: $:/plugins/kookma/pikaday/macros/filters
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define py-is-overdue()
+[all[current]!tag[Done]!tag[done]!has[draft.of]!days:due[-1]]
+\end
+
+\define py-is-not-overdue()
+[all[current]!has[draft.of]] -[!days:due[-1]]
+\end
+
+\define py-is-due-yesterday()
+[all[current]!has[draft.of]days:due[-1]]
+\end
+
+\define py-is-due-today()
+[all[current]!has[draft.of]days:due[0]]
+\end
+
+\define py-is-due-later()
+[all[current]!has[draft.of]!days:due[1]]
+\end
+
+\define py-is-due-tomorrow()
+[all[current]!has[draft.of]days:due[1]]
+\end
+
+\define py-is-not-scheduled()
+[all[current]!has[draft.of]!has[due]]
+\end
+
+\define py-is-scheduled()
+[all[current]!has[draft.of]has[due]]
+\end
+
+<!--
+The rason to use both tags: done and Done is to support both of them.
+--> 

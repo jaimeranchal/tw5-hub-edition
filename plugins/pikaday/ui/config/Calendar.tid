@@ -1,0 +1,17 @@
+caption: {{$:/language/projectify/Calendar}}
+list-before: $:/plugins/nico/projectify/ui/config/Dashboard
+tags: 
+title: $:/plugins/kookma/pikaday/ui/config/Calendar
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+\define select-first-day-of-week()
+<$select tiddler="$:/config/projectify/FirstDayOfWeek" default="1">
+  <option value="6">{{$:/language/Date/Long/Day/6}}</option>
+  <option value="0">{{$:/language/Date/Long/Day/0}}</option>
+  <option value="1">{{$:/language/Date/Long/Day/1}}</option>
+</$select>
+\end
+
+<label class="kk-pk-label"><<lingo FirstDayOfWeek>></label><<select-first-day-of-week>>

@@ -1,0 +1,23 @@
+created: 20231104084601180
+modified: 20231105072219984
+tags: $:/tags/PageTemplate $:/tags/Commander/Working
+title: $:/themes/jairan/thehub/ui/topbar
+type: text/vnd.tiddlywiki
+
+\define listFilter()
+[all[shadows+tiddlers]tag[$:/tags/TopBar]!has[draft.of]]
+\end
+
+<div class="hub-topbar tc-adjust-top-of-scroll">
+
+<$transclude tiddler="$:/core/ui/PageTemplate/topleftbar"/>
+
+<$list filter=<<listFilter>> variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+<$transclude tiddler="$:/core/ui/PageTemplate/toprightbar"/>
+
+</div>

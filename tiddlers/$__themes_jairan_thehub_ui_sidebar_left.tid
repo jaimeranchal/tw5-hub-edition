@@ -1,0 +1,25 @@
+created: 20231104082801347
+list-before: 
+modified: 20231105072219890
+tags: $:/tags/PageTemplate $:/tags/Commander/Working
+title: $:/themes/jairan/thehub/ui/sidebar_left
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/state/thehub/sidebar]get[text]] +[else[yes]!match[no]]" variable=".">
+
+<div class="hub-sidebar">
+
+<$list filter="[tag[$:/tags/LeftSideBar]!has[draft.of]]" 
+variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+!! Left Sidebar
+
+List all items tagged with <<tag-pill tag:"$:/tags/LeftSideBar">>
+
+</div>
+
+</$list>

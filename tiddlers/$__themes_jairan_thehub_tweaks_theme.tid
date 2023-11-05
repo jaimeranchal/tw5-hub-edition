@@ -1,0 +1,13 @@
+caption: Theme Tweaks
+created: 20231104094430292
+modified: 20231105074401284
+tags: $:/tags/ControlPanel/Appearance
+title: $:/themes/jairan/thehub/tweaks/theme
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/ThemeTweaks/
+
+<<tabs tabsList:"[prefix[$:/themes/jairan/thehub/tweaks/]!has[draft.of]!suffix[/theme]]" 
+default:"$:/themes/jairan/thehub/tweaks/colors" 
+state:"$:/state/thehub/tweaks" 
+class:"tc-vertical">>

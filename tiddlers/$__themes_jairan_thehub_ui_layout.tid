@@ -1,0 +1,59 @@
+created: 20231103171158736
+description: Condensed layout with a left sidebar
+modified: 20231105072219992
+name: the Hub
+tags: $:/tags/Layout $:/tags/Commander/Working
+title: $:/themes/jairan/thehub/ui/layout
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define containerClasses()
+tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$
+\end
+
+\define listFilter()
+[all[shadows+tiddlers]tag[$:/tags/PageTemplate]!has[draft.of]] 
+-[[$:/core/ui/PageTemplate/topleftbar]]
+-[[$:/core/ui/PageTemplate/toprightbar]]
+-[[$:/themes/jairan/thehub/ui/topbar]]
+\end
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+
+<$vars
+	tv-config-toolbar-icons={{$:/config/Toolbar/Icons}}
+	tv-config-toolbar-text={{$:/config/Toolbar/Text}}
+	tv-config-toolbar-class={{$:/config/Toolbar/ButtonClass}}
+	tv-enable-drag-and-drop={{$:/config/DragAndDrop/Enable}}
+	tv-show-missing-links={{$:/config/MissingLinks}}
+	storyviewTitle={{$:/view}}
+	languageTitle={{{ [{$:/language}get[name]] }}}>
+
+<div class=<<containerClasses>>>
+
+<$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
+
+<$dropzone enable=<<tv-enable-drag-and-drop>>>
+
+<div class="hub-box">
+
+{{$:/themes/jairan/thehub/ui/topbar}}
+
+<div class="hub-main">
+
+<$list filter=<<listFilter>> variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+</div>
+
+</div>
+
+</$dropzone>
+
+</$navigator>
+
+</div>
+
+</$vars>

@@ -1,0 +1,9 @@
+caption: 🎛️ <<lingo Options>>
+created: 20231105073021046
+modified: 20231105073359930
+tags: 
+title: $:/themes/jairan/thehub/tweaks/options
+type: text/vnd.tiddlywiki
+
+|<$link to="$:/themes/tiddlywiki/vanilla/options/stickytitles"><<lingo Options/StickyTitles>></$link><br>//Causes tiddler titles to "stick" to the top of the browser window. Caution: Not compatible with all browsers// |<$select tiddler="$:/themes/tiddlywiki/vanilla/options/stickytitles"><option value="no">{{$:/language/No}}</option><option value="yes">{{$:/language/Yes}}</option></$select> |
+|<$link to="$:/themes/tiddlywiki/vanilla/options/codewrapping"><<lingo Options/CodeWrapping>></$link> |<$select tiddler="$:/themes/tiddlywiki/vanilla/options/codewrapping"><option value="pre">{{$:/language/No}}</option><option value="pre-wrap">{{$:/language/Yes}}</option></$select> |

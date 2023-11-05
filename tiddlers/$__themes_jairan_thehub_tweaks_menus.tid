@@ -1,0 +1,33 @@
+caption: 📑 Menus
+created: 20231105074516803
+modified: 20231105081221016
+tags: 
+title: $:/themes/jairan/thehub/tweaks/menus
+type: text/vnd.tiddlywiki
+
+\function title(title)
+[<title>removeprefix[$:/core/ui/SideBarSegements/]]
+\end
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Left Sidebar</th>
+<th>TopBar</th>
+<th>Right Sidebar</th>
+</tr>
+</thead>
+<tbody>
+<$list filter="[all[shadows+tiddlers]!has[draft.of]prefix[$:/core/ui/SideBarSegments/]]" variable="listItem">
+<$set filter="[<listItem>removeprefix[$:/core/ui/SideBarSegments/]]" name="itemTitle">
+<tr>
+<td>''<<itemTitle>>''</td>
+<td><$checkbox tiddler=<<listItem>> tag="$:/tags/LeftSideBar"/></td>
+<td><$checkbox tiddler=<<listItem>> tag="$:/tags/TopBar"/></td>
+<td>---</td>
+</tr>
+</$set>
+</$list>
+</tbody>
+</table>

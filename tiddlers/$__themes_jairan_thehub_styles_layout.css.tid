@@ -1,0 +1,102 @@
+created: 20231104085923867
+modified: 20231105082747153
+tags: $:/tags/Stylesheet $:/tags/Commander/Working
+title: $:/themes/jairan/thehub/styles/layout.css
+type: text/vnd.tiddlywiki
+
+<!-- ============ Basic Page Layout ============ -->
+
+.hub-box {
+   display: flex;
+   flex-direction: column;
+}
+
+.hub-box .hub-topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hub-box .hub-main {
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: auto 1fr auto;
+}
+
+.hub-main .tc-sidebar-scrollable {
+   position: relative;
+   grid-row: 1 / 2;
+   grid-column: 3 / 4;
+}
+
+.hub-main .tc-story-river {
+   grid-row: 1 / 2;
+   grid-column: 2 / 3;
+}
+
+.hub-main .hub-sidebar {
+   grid-row: 1 / 2;
+   grid-column: 1 / 2;
+}
+
+
+
+<!-- ===== Top Bar ===== -->
+
+.hub-box .hub-topbar {
+   background-color: <<colour page-background>>;
+   box-shadow: 0 1px 2px 1px <<colour pre-border>>;
+   position: sticky; top: 0;
+   z-index: 200;
+}
+
+.hub-box .hub-topbar .tc-topbar {
+   flex: 1 0 auto;
+   position: relative;
+   padding: 0.25rem 0.5rem;
+}
+
+.hub-box .hub-topbar .tc-topbar-left {
+   display: flex;
+   justify-content: flex-start;
+   left: 0; top: 0;
+}
+
+.hub-box .hub-topbar .tc-topbar-right {
+   display: flex;
+   justify-content: flex-end;
+   right: 0; top: 0;
+}
+
+
+
+<!-- ======== Story River ======== -->
+
+.hub-box .hub-main .tc-story-river {
+   margin: 0;
+   padding: 2rem;
+}
+
+
+
+<!-- ====== Sidebars ====== -->
+
+.hub-box .hub-main .tc-sidebar-scrollable,
+.hub-box .hub-main .hub-sidebar {
+   margin: 0;
+   padding: 1rem;
+}
+
+.hub-sidebar {
+	width: {{$:/themes/jairan/thehub/metrics/sidebarleftwidth}};
+}
+
+.hub-box .hub-main .tc-sidebar-scrollable {
+<$list filter="[[$:/state/sidebar]get[text]] +[else[yes]match[no]]" variable=".">
+   width: 0;
+</$list>
+}
+
+.hub-box .hub-main .hub-sidebar h2 {
+   margin: 0;
+}

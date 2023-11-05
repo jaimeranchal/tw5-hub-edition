@@ -1,0 +1,11 @@
+created: 20231105081046518
+modified: 20231105083003914
+tags: $:/tags/SideBarSegment $:/tags/TopBar
+title: $:/core/ui/SideBarSegments/site-title
+type: text/vnd.tiddlywiki
+
+<h1 class="tc-site-title">
+
+<$transclude tiddler="$:/SiteTitle" mode="inline"/>
+
+</h1>

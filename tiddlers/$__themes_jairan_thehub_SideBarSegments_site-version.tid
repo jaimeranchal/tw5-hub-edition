@@ -1,0 +1,7 @@
+created: 20231105195705219
+modified: 20231105195723815
+tags: $:/tags/TopBar
+title: $:/themes/jairan/thehub/SideBarSegments/site-version
+type: text/vnd.tiddlywiki
+
+<span class="hub-site-version"><<version>></span>

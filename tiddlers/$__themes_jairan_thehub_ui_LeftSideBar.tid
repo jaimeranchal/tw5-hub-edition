@@ -1,13 +1,19 @@
 created: 20231104082801347
 list-before: 
-modified: 20231105072219890
+modified: 20231105225054696
 tags: $:/tags/PageTemplate $:/tags/Commander/Working
-title: $:/themes/jairan/thehub/ui/sidebar_left
+title: $:/themes/jairan/thehub/ui/LeftSideBar
 type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/state/thehub/sidebar]get[text]] +[else[yes]!match[no]]" variable=".">
 
-<div class="hub-sidebar">
+<div class="hub-sidebar hub-leftbar">
+
+!! Left Sidebar
+
+List all items tagged with <<tag-pill tag:"$:/tags/LeftSideBar">>
+
+<hr>
 
 <$list filter="[tag[$:/tags/LeftSideBar]!has[draft.of]]" 
 variable="listItem">
@@ -15,10 +21,6 @@ variable="listItem">
 <$transclude tiddler=<<listItem>>/>
 
 </$list>
-
-!! Left Sidebar
-
-List all items tagged with <<tag-pill tag:"$:/tags/LeftSideBar">>
 
 </div>
 

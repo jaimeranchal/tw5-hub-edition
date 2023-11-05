@@ -1,0 +1,25 @@
+created: 20231105222643885
+list-after: $:/core/ui/PageTemplate/story
+modified: 20231105231837695
+tags: $:/tags/PageTemplate
+title: $:/themes/jairan/thehub/ui/RightSideBar
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/state/thehub/rightsidebar]get[text]] +[else[yes]!match[no]]" variable=".">
+
+<div class="hub-sidebar hub-rightbar">
+
+<$list filter="[tag[$:/tags/RightSideBar]!has[draft.of]]" 
+variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+!! Right Sidebar
+
+List all items tagged with <<tag-pill tag:"$:/tags/RightSideBar">>
+
+</div>
+
+</$list>

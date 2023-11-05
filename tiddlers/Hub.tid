@@ -1,9 +1,13 @@
 caption: 🎏 The Hub
 created: 20231103110238052
-modified: 20231103121436956
+modified: 20231105200915305
 tags: 
 title: Hub
 type: text/vnd.tiddlywiki
+
+<<callout type:"note" title:"//The Hub// theme contents" src:"""
+<<tree prefix:"$:/themes/jairan/thehub/" separator:"/">>
+""">>
 
 This is the main entry point to your wiki. From here you //should// be able to:
 
@@ -20,12 +24,8 @@ This is the main entry point to your wiki. From here you //should// be able to:
 
 For each category defined you should see two tabs:
 
-<div class="list-wrapper">
-
 * a ''overview'' tab listing all tiddlers tagged with the corresponding category. Could be a table, a list, as you wish.
 * a ''create'' tab with a form to add new items.
-
-</div>
 
 ! 🚧 Modding
 

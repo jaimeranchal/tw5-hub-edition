@@ -1,0 +1,7 @@
+created: 20231105195612064
+modified: 20231105195649327
+tags: $:/tags/TopBar
+title: $:/themes/jairan/thehub/SideBarSegments/site-subtitle
+type: text/vnd.tiddlywiki
+
+<span class="hub-site-subtitle"><$transclude tiddler="$:/SiteSubtitle" mode="inline"/></span>

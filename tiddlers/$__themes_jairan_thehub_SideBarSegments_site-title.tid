@@ -1,0 +1,7 @@
+created: 20231105193244518
+modified: 20231105195739042
+tags: $:/tags/TopBar
+title: $:/themes/jairan/thehub/SideBarSegments/site-title
+type: text/vnd.tiddlywiki
+
+<h1><$transclude tiddler="$:/SiteTitle" mode="inline"/></h1>

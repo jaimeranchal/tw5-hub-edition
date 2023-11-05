@@ -1,6 +1,6 @@
 caption: 📐 <<lingo Metrics>>
 created: 20231105073050117
-modified: 20231105073333444
+modified: 20231105224525403
 tags: 
 title: $:/themes/jairan/thehub/tweaks/metrics
 type: text/vnd.tiddlywiki
@@ -10,6 +10,6 @@ type: text/vnd.tiddlywiki
 |<$link to="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize"><<lingo Metrics/BodyFontSize>></$link> |<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize" default="" tag="input"/> |
 |<$link to="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight"><<lingo Metrics/BodyLineHeight>></$link> |<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight" default="" tag="input"/> |
 |<$link to="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint"><<lingo Metrics/SidebarBreakpoint>></$link><br>//<<lingo Metrics/SidebarBreakpoint/Hint>>// |^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint" default="" tag="input"/> |
-|<$link to="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth"><<lingo Metrics/SidebarWidth>></$link><br>//<<lingo Metrics/SidebarWidth/Hint>>// |^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth" default="" tag="input"/> |
 |<$link to="$:/themes/jairan/thehub/metrics/sidebarleftwidth">Left Sidebar width</$link><br>//<<lingo Metrics/SidebarWidth/Hint>>// |^<$edit-text tiddler="$:/themes/jairan/thehub/metrics/sidebarleftwidth" default="" tag="input"/> |
+|<$link to="$:/themes/jairan/thehub/metrics/sidebarrightwidth">Right Sidebar width</$link><br>//<<lingo Metrics/SidebarWidth/Hint>>// |^<$edit-text tiddler="$:/themes/jairan/thehub/metrics/sidebarrightwidth" default="" tag="input"/> |
 |<$link to="$:/themes/cdr/captivate/settings/tiddlerwidth"><<lingo Metrics/TiddlerWidth>></$link><br>//<<lingo Metrics/TiddlerWidth/Hint>>// |^<$edit-text tiddler="$:/themes/cdr/captivate/settings/tiddlerwidth" default="" tag="input"/> |

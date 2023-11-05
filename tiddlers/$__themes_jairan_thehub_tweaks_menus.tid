@@ -1,12 +1,13 @@
 caption: 📑 Menus
 created: 20231105074516803
-modified: 20231105081221016
+modified: 20231105233004478
 tags: 
 title: $:/themes/jairan/thehub/tweaks/menus
 type: text/vnd.tiddlywiki
 
-\function title(title)
-[<title>removeprefix[$:/core/ui/SideBarSegements/]]
+\define listFilter()
+[all[shadows+tiddlers]!has[draft.of]prefix[$:/core/ui/SideBarSegments/]] 
+[all[shadows+tiddlers]!has[draft.of]prefix[$:/themes/jairan/thehub/SideBarSegments/]]
 \end
 
 <table>
@@ -15,19 +16,39 @@ type: text/vnd.tiddlywiki
 <th></th>
 <th>Left Sidebar</th>
 <th>TopBar</th>
-<th>Right Sidebar</th>
+<th>Top Left</th>
+<th>Top Right</th>
 </tr>
 </thead>
 <tbody>
-<$list filter="[all[shadows+tiddlers]!has[draft.of]prefix[$:/core/ui/SideBarSegments/]]" variable="listItem">
+<$list filter=<<listFilter>> variable="listItem">
 <$set filter="[<listItem>removeprefix[$:/core/ui/SideBarSegments/]]" name="itemTitle">
 <tr>
-<td>''<<itemTitle>>''</td>
+<td>''<<listItem>>''</td>
 <td><$checkbox tiddler=<<listItem>> tag="$:/tags/LeftSideBar"/></td>
 <td><$checkbox tiddler=<<listItem>> tag="$:/tags/TopBar"/></td>
-<td>---</td>
+<td><$checkbox tiddler=<<listItem>> tag="$:/tags/TopLeftBar"/></td>
+<td><$checkbox tiddler=<<listItem>> tag="$:/tags/TopRightBar"/></td>
 </tr>
 </$set>
 </$list>
 </tbody>
 </table>
+
+!! Sidebar
+
+<$transclude $variable="list-tagged-draggable" tag="$:/tags/LeftSideBar"/>
+
+!! Topbar
+
+!!! Left
+<$transclude $variable="list-tagged-draggable" tag="$:/tags/TopLeftBar"/>
+
+!!! Center
+<$transclude $variable="list-tagged-draggable" tag="$:/tags/TopBar"/>
+
+!!! Right
+
+<<alert type:"warning" src:"""This theme ''overwrites shadow tiddler'' [[$:/core/ui/TopBar/menu]], taking off the tag <<tag-pill "$:/tags/TopRightBar">> from it""">>
+
+<$transclude $variable="list-tagged-draggable" tag="$:/tags/TopRightBar"/>

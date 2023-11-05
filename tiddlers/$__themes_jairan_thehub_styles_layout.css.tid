@@ -1,5 +1,5 @@
 created: 20231104085923867
-modified: 20231105082747153
+modified: 20231105231631849
 tags: $:/tags/Stylesheet $:/tags/Commander/Working
 title: $:/themes/jairan/thehub/styles/layout.css
 type: text/vnd.tiddlywiki
@@ -23,7 +23,7 @@ type: text/vnd.tiddlywiki
    grid-template-columns: auto 1fr auto;
 }
 
-.hub-main .tc-sidebar-scrollable {
+.hub-main .tc-sidebar-scrollable, .hub-rightbar {
    position: relative;
    grid-row: 1 / 2;
    grid-column: 3 / 4;
@@ -34,12 +34,10 @@ type: text/vnd.tiddlywiki
    grid-column: 2 / 3;
 }
 
-.hub-main .hub-sidebar {
+.hub-main .hub-leftbar {
    grid-row: 1 / 2;
    grid-column: 1 / 2;
 }
-
-
 
 <!-- ===== Top Bar ===== -->
 
@@ -56,6 +54,10 @@ type: text/vnd.tiddlywiki
    padding: 0.25rem 0.5rem;
 }
 
+.hub-topbar .tc-page-controls, .hub-site-title, p {
+  margin: 0;
+}
+
 .hub-box .hub-topbar .tc-topbar-left {
    display: flex;
    justify-content: flex-start;
@@ -68,13 +70,34 @@ type: text/vnd.tiddlywiki
    right: 0; top: 0;
 }
 
+<!-- ======== Site title ======== -->
 
+.hub-site-title {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.hub-site-title h1, span { 
+  margin: 0; 
+}
+
+.hub-site-title h1 { font-size: 2em; }
+.hub-site-version { 
+  font-size: 0.8em;
+}
+p:has(span.hub-site-version) { align-self:flex-start;}
+.hub-site-subtitle {
+  font-style: italic;
+}
 
 <!-- ======== Story River ======== -->
 
 .hub-box .hub-main .tc-story-river {
    margin: 0;
    padding: 2rem;
+	 max-height: calc(100vh - 50px);
 }
 
 
@@ -87,8 +110,12 @@ type: text/vnd.tiddlywiki
    padding: 1rem;
 }
 
-.hub-sidebar {
+.hub-leftbar {
 	width: {{$:/themes/jairan/thehub/metrics/sidebarleftwidth}};
+}
+
+.hub-rightbar {
+	width: {{$:/themes/jairan/thehub/metrics/sidebarrightwidth}};
 }
 
 .hub-box .hub-main .tc-sidebar-scrollable {

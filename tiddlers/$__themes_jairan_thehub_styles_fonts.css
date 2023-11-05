@@ -7,7 +7,6 @@ h1,h2,h3,h4,h5 {
 /* not tc-tiddler-info */
 .tc-tiddler-body h1 {
 	font-size: 2rem;
-  text-align: center;
 	width: 100%;
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid #202020;
@@ -22,6 +21,5 @@ h1,h2,h3,h4,h5 {
 /* Custom styles */
 .list-wrapper {
   width: 75%;
-	margin-left:auto;
-	margin-right:auto;
+	padding-left:1.5rem;
 }

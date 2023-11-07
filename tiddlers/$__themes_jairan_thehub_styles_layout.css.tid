@@ -1,5 +1,5 @@
 created: 20231104085923867
-modified: 20231107214317528
+modified: 20231107220218184
 tags: $:/tags/Stylesheet $:/tags/Commander/Working
 title: $:/themes/jairan/thehub/styles/layout.css
 type: text/vnd.tiddlywiki
@@ -34,6 +34,11 @@ type: text/vnd.tiddlywiki
    grid-column: 2 / 3;
 }
 
+.hub-main .hub-leftbar, .hub-rightbar {
+  position: sticky;
+  top: 50px;
+  align-self:start;
+}
 .hub-main .hub-leftbar {
    grid-row: 1 / 2;
    grid-column: 1 / 2;
@@ -107,8 +112,8 @@ p:has(span.hub-site-version) { align-self:flex-start;}
 .hub-box .hub-main .tc-story-river {
   margin: 0;
   padding: 2rem;
-  max-height: calc(100vh - 50px);
-	overflow: auto;
+  <!-- max-height: calc(100vh - 50px);
+	overflow: auto; -->
 }
 
 .hub-box .hub-main .tc-story-river::-webkit-scrollbar {

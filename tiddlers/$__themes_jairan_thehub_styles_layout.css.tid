@@ -1,5 +1,5 @@
 created: 20231104085923867
-modified: 20231106065817223
+modified: 20231107214317528
 tags: $:/tags/Stylesheet $:/tags/Commander/Working
 title: $:/themes/jairan/thehub/styles/layout.css
 type: text/vnd.tiddlywiki
@@ -54,20 +54,30 @@ type: text/vnd.tiddlywiki
    padding: 0.25rem 0.5rem;
 }
 
+.hub-topbar .tc-page-controls, .hub-site-title {
+  flex-grow: 1;
+}
+
 .hub-topbar .tc-page-controls, .hub-site-title, p {
   margin: 0;
 }
 
+.hub-topbar .tc-page-controls > button {
+  margin:0;
+}
+
 .hub-box .hub-topbar .tc-topbar-left {
-   display: flex;
-   justify-content: flex-start;
-   left: 0; top: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-grow:1;
+  left: 0; top: 0;
 }
 
 .hub-box .hub-topbar .tc-topbar-right {
-   display: flex;
-   justify-content: flex-end;
-   right: 0; top: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow:1;
+  right: 0; top: 0;
 }
 
 <!-- ======== Site title ======== -->
